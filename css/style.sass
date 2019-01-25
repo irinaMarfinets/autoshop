@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+
+$FONT__1: 'Open Sans', sans-serif
+
+$COLOR__WHITE: #FFF
+$COLOR__GRAY: #737373
+$COLOR__RED: #e50a2e
+$COLOR__RED__LIGHT: #f0dfe0
+$COLOR__RED__BLACK: #8c041d
+
+%flexCenter
+	display: flex
+	justify-content: center
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+a
+	text-decoration: none
+
+a:hover
+	text-decoration: none
+
+ul, li
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+input
+	outline: none
+
+html
+	font-size: 14px
+
+body
+	padding: 0
+	margin: 0
+	background: url(../img/bg2Header.png) no-repeat
+	background-position: 70% 100px
+	overflow-x: hidden
+
+
+.container-fluid
+	padding: 0
+
+	header
+		background: rgba(38, 47, 61, .8)
+		color: $COLOR__WHITE
+		padding: 6.2rem 10%
+
+
+		.headerLogo
+			img
+				width: 135px
+				height: auto
+
+		.headerMenu
+			ul
+				@extend %flexCenter
+				flex-direction: row
+
+				a
+					font-family: $FONT__1
+					color: $COLOR__WHITE
+					font-size: 1.2rem
+					margin-left: 2.4rem
+
+				a:hover
+					color: $COLOR__RED
+
+				.login
+					border: 1px solid $COLOR__WHITE
+					border-radius: 10px
+					background: transparent
+					padding: 1rem 2rem
+
+				.login:hover
+					color: $COLOR__RED
+					border-color: $COLOR__RED
+
+		.headerText
+			font-family: $FONT__1
+			font-size: 1.2rem
+			text-align: center
+			margin-top: 8rem
+
+			h1
+				font-size: 2.8rem
+				margin-bottom: 1rem
+				text-transform: uppercase
+
+			p
+				margin-bottom: 1.6rem
+
+				a
+					color: $COLOR__WHITE
+
+				a:hover
+					text-decoration: underline
+
+		.headerForm
+			background: $COLOR__WHITE
+			color: $COLOR__GRAY
+			border-radius: 10px
+			margin-top: 3rem
+
+			form
+				display: flex
+				//justify-content: space-between
+				flex-direction: row
+				margin: 2.2rem 2.5rem
+				font-family: $FONT__1
+
+				.formPhone
+					width: 50%
+					font-size: 1rem
+					input
+						width: 80%
+						padding: .5rem 1.6rem
+						background: $COLOR__RED__LIGHT
+						border: 1px solid $COLOR__RED__LIGHT
+						border-radius: 5px
+
+					input:hover
+						border-color: $COLOR__RED
+
+					span
+						color: $COLOR__RED
+
+				.btn-danger
+					padding: 1.6rem 4rem
+					text-transform: uppercase
+					font-size: 1rem
+
+				.btn-danger:hover
+					background: $COLOR__RED__BLACK
+
+	main
+		.model
+			margin-top: 8rem
+			margin-bottom: 8rem
+			font-family: $FONT__1
+
+			h3
+				font-size: 2.6rem
+				color: $COLOR__GRAY
+
+			.modelHeader
+				text-align: center
+
+			.modelBlock
+				display: flex
+				justify-content: space-between
+				flex-direction: row
+				flex-wrap: nowrap
+				margin-top: 7rem
+
+				.modelItem
+					display: flex
+					justify-content: center
+					align-items: flex-end
+					flex-wrap: wrap
+					width: 160px
+					height: 180px
+					margin: 10px 20px
+					box-shadow:  0 0 10px rgba(0,0,0,0.5)
+					border-radius: 5px
+
+					.modelText
+						width: 100%
+						height: 25px
+						font-size: 1.8rem
+						color: $COLOR__WHITE
+						background: $COLOR__RED
+						text-align: center
+						border-bottom-right-radius: 5px
+						border-bottom-left-radius: 5px
+
+		.advant
+			margin-top: 8rem
+			font-family: $FONT__1
+
+			h3
+				font-size: 2.2rem
+				color: $COLOR__GRAY
+				text-align: center
+				text-transform: uppercase
+
+			.advantBlock
+				display: flex
+				justify-content: center
+				flex-wrap: nowrap
+				margin-top: 5rem
+				
+				.advantItem
+					width: 25%
+
+					
+					.advantTitle
+						display: flex
+						flex-wrap: nowrap
+						justify-content: center
+
+						span
+							font-size: 2rem
+							color: $COLOR__RED
+							padding-top: 1px
+							
+						h4
+							font-size: 1.4rem
+					
+					.advantText
+						margin-top: 1rem
+						text-align: center
+						
+						p
+							margin-top: 1.6rem
+							color: $COLOR__GRAY
+
+					.advantText::before
+						content: url(../img/line.png)
+						color: $COLOR__RED__BLACK
+						font-size: 1.2rem
+						padding: 2px
+						width: 100%
+
+		.mapPage
+			margin-top: 8rem
+			font-family: $FONT__1
+
+			h3
+				font-size: 2.2rem
+				color: $COLOR__GRAY
+				text-align: center
+				text-transform: uppercase
+
+			.mapBlock
+				@extend %flexCenter
+				margin-top: 5rem
+
+	footer
+		@extend %flexCenter
+		margin-top: 8rem
+		background: url(../img/bgFooter.png)
+		background-size: cover
+		
+		.footerBlock
+			display: flex
+			flex-wrap: nowrap
+			width: 75%
+			font-family: $FONT__1
+
+			.row
+				width: 100%
+				margin: 0
+
+			.col, .col-3
+				width: 20%
+				padding-left: 5%
+				margin: 10rem 0 4rem 0
+
+			.footerLogo
+				display: flex
+				align-items: flex-end
+				flex-wrap: wrap
+				img
+					width: 135px
+					height: auto
+
+				p
+					margin-top: 1rem
+					font-size: 1rem
+					color: $COLOR__GRAY
+
+			a, li
+				font-size: 14px
+				color: $COLOR__WHITE
+				margin: .7rem 0
+
+				span
+					color: $COLOR__RED__BLACK
+
+			a:hover
+				color: $COLOR__RED

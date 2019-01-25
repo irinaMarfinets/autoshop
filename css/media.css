@@ -1,0 +1,47 @@
+@media screen and (max-width: 1470px) {
+  .container-fluid header .headerForm form {
+    flex-wrap: wrap; }
+    .container-fluid header .headerForm form .formPhone {
+      width: 100%;
+      margin-bottom: 20px; }
+      .container-fluid header .headerForm form .formPhone input {
+        width: 100%; }
+    .container-fluid header .headerForm form .btn-danger {
+      margin: 10px 0;
+      width: 100%;
+      padding: 1rem 2rem; }
+  .container-fluid main .advant .advantBlock {
+    flex-wrap: wrap; }
+    .container-fluid main .advant .advantBlock .advantItem {
+      width: 40%;
+      margin-bottom: 40px; } }
+@media screen and (max-width: 1310px) {
+  .container-fluid footer .footerBlock {
+    width: 100%; } }
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 12px; }
+
+  .container-fluid main .advant .advantBlock .advantItem .advantText p {
+    font-size: 14px; } }
+@media screen and (max-width: 768px) {
+  body {
+    background: none; }
+    body .container-fluid header {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+    body .container-fluid main .advant .advantBlock .advantItem {
+      width: 100%; }
+    body .container-fluid main .mapPage .mapBlock {
+      padding: 0; }
+      body .container-fluid main .mapPage .mapBlock iframe {
+        width: 100%; }
+    body .container-fluid footer .footerBlock .footerLogo {
+      display: none; }
+    body .container-fluid footer .footerBlock .none {
+      display: none; }
+    body .container-fluid footer .footerBlock .width {
+      width: 50%; } }
+
+/*# sourceMappingURL=media.css.map */
